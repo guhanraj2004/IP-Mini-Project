@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Request</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Include your CSS -->
+</head>
+<body style="background-image: url('leave_background.jpg');">
+    <div class="container">
+        <h2>Leave Request</h2>
+        <form action="process_leave_request.php" method="POST">
+            <label for="employee_id">Employee ID:</label>
+            <input type="text" id="employee_id" name="employee_id" required>
+            <br>
+            <label for="employee_password">Password:</label>
+            <input type="password" id="employee_password" name="employee_password" required>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

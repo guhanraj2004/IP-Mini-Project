@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Management System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            color: white;
+            overflow: hidden; /* Prevent scrolling */
+            background: url('background.jpg') no-repeat center center fixed; /* Add background image */
+            background-size: cover; /* Ensure the background image covers the entire area */
+        }
+        .container {
+            text-align: center;
+            color: Black;
+            padding-top: 20px; /* Adjusted top spacing */
+            position: absolute; /* Changed to absolute for overlay effect */
+            width: 100%;
+            z-index: 1000; /* Ensure it is above the carousel */
+        }
+        .typing-text {
+            font-size: 64px; /* Increased font size for welcome text */
+            border-right: 2px solid white; /* Cursor effect */
+            white-space: nowrap;
+            overflow: hidden; /* Ensures the text doesn't overflow */
+            width: 0; /* Start width for animation */
+            animation: typing 4s steps(30, end) forwards, blink-caret 0.75s step-end infinite;
+        }
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: white; }
+        }
+        nav {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            display: flex;
+            justify-content: space-around;
+            position: relative;
+            margin-top: 20px; /* Space below the typing text */
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+        }
+        nav a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+        .description {
+            color: black; /* Black color for description */
+            padding: 20px; /* Add padding for better appearance */
+            font-size: 18px; /* Size of description text */
+            line-height: 1.5; /* Spacing between lines */
+            text-align: center; /* Center the text */
+            margin: 50px auto; /* Add margin for spacing */
+            max-width: 800px; /* Limit width for readability */
+            background-color: white; /* Optional white background for contrast */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+            position: absolute; /* Change to absolute positioning */
+            bottom: 20px; /* Position it at the bottom */
+            left: 50%; /* Center horizontally */
+            transform: translateX(-50%); /* Offset to center correctly */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="typing-text">Welcome to Tech Solutions</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="leave_request.html">Leave Request</a>
+            <a href="status.php">Leave Status</a>
+            <a href="admin.html">Admin Login</a>
+            <a href="#">Help</a>
+            <a href="leave_request2.html">Emergency Leave</a>
+        </nav>
+    </div>
+
+    <div class="description">
+        <p>Your dedication to our company has led to glorious achievements that exemplify our core values and mission. Your hard work, creativity, and commitment have not only driven our success but have also fostered a collaborative and inspiring environment for all. At our organization, it is our privilege to value your well-being and provide the support you need, including leave when necessary. We understand the importance of work-life balance and are committed to ensuring that you have the resources and time to recharge. As we continue to grow and evolve, your contributions remain at the heart of our progress. We are proud to have you as part of our journey and look forward to reaching even greater heights together. Thank you for your relentless passion and unwavering support, which are essential to our collective success.</p>
+    </div>
+</body>
+</html>
